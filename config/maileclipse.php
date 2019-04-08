@@ -13,6 +13,12 @@ return [
 
 	'path' => 'maileclipse',
 
+
+    /*
+     * path store blade tempalte
+     */
+    'template_path' => resource_path('views/vendor/maileclipse/templates'),
+
 	/*
     |--------------------------------------------------------------------------
     | Laravel Mail Directory

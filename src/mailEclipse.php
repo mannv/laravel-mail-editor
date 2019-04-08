@@ -214,7 +214,11 @@ class mailEclipse
 		        	'template_skeleton' => $request->template_skeleton,
 		        ]);
 
-			$dir = dirname(__FILE__, 2). '/resources/views/templates';
+			$dir = config('maileclipse.template_path');
+
+			if(!\File::isDirectory($dir)) {
+			    \File::makeDirectory($dir, 0755, true);
+            }
 
 			file_put_contents($dir. "/{$templatename}.blade.php", self::templateComponentReplace($request->content));
 
