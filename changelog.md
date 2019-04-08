@@ -25,3 +25,7 @@ All notable changes to `laravel-mail-editor` will be documented in this file.
 - look for the equivalent factory and check if the dependency is an eloquent model.
 - resolve all other non-eloquent objects.
 - markdown editor will output no object variables in the following format: {{ varname }}.
+
+## Version 2.0.0
+
+- publish view to resources path
